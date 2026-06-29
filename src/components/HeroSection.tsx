@@ -24,6 +24,7 @@ export default function HeroSection() {
   const navItems = [
     { name: "Главная", href: "#hero" },
     { name: "Философия", href: "#mission" },
+    { name: "Каталог", href: "#products" },
     { name: "Коллекция", href: "#community" },
     { name: "Отзывы", href: "#testimonials" },
     { name: "Купить", href: "#join" },
