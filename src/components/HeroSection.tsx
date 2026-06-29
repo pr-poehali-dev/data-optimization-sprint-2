@@ -8,16 +8,16 @@ export default function HeroSection() {
 
   const slides = [
     {
-      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/1b5eeab0-cda2-429b-b649-29ec1797b359.jpg",
-      alt: "Модель в премиальном стрит-вире RUBEZH",
+      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/3f0bf9c4-db3a-4c6f-ba4d-c747506b7a86.jpg",
+      alt: "Модель в футболке RUBEZH «Медведь»",
     },
     {
-      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/4c502fb6-2caa-4a25-8734-9f4492972bf0.jpg",
-      alt: "Уличный образ RUBEZH в движении",
+      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/9072f2fb-d631-4204-aaca-0c679a93c2db.jpg",
+      alt: "Футболка RUBEZH «Сила» — вид сзади",
     },
     {
-      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/f0a9c5f1-e3f3-4c8d-a8ab-dd1d8774ec25.jpg",
-      alt: "Коллекция RUBEZH на крыше города",
+      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/8072e932-b0e9-4153-8638-c81ed19d7155.jpg",
+      alt: "Футболка RUBEZH «Воин» — вид сзади",
     },
   ]
 
