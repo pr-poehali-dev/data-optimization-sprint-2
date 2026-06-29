@@ -13,8 +13,8 @@ export default function Index() {
   const timelineEntries = [
     {
       id: 1,
-      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/1b5eeab0-cda2-429b-b649-29ec1797b359.jpg",
-      alt: "Премиальный образ RUBEZH",
+      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/3f0bf9c4-db3a-4c6f-ba4d-c747506b7a86.jpg",
+      alt: "Модель в футболке RUBEZH «Медведь»",
       title: "Качество без компромиссов",
       description:
         "Мы выбираем плотные премиальные ткани, усиленные швы и фурнитуру, которая служит годами. Каждая вещь RUBEZH проходит ручной контроль — потому что роскошь начинается с деталей, которые видно и которые чувствуешь.",
@@ -22,8 +22,8 @@ export default function Index() {
     },
     {
       id: 2,
-      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/29a3573d-52ac-41ad-be08-ed3d4a481415.jpg",
-      alt: "Деталь премиальной ткани RUBEZH",
+      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/9072f2fb-d631-4204-aaca-0c679a93c2db.jpg",
+      alt: "Футболка RUBEZH «Сила» на модели",
       title: "Силуэт, который говорит за тебя",
       description:
         "Оверсайз-крой, выверенные пропорции, выдержанная тёмная палитра. RUBEZH — это уличная эстетика, доведённая до уровня высокой моды. Один образ — и тебя запоминают.",
@@ -31,8 +31,8 @@ export default function Index() {
     },
     {
       id: 3,
-      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/4c502fb6-2caa-4a25-8734-9f4492972bf0.jpg",
-      alt: "Уличный образ RUBEZH в движении",
+      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/8072e932-b0e9-4153-8638-c81ed19d7155.jpg",
+      alt: "Футболка RUBEZH «Воин» на модели",
       title: "Стиль вне сезона",
       description:
         "Мы делаем вещи, которые не выходят из моды на следующий день. RUBEZH — это инвестиция в гардероб, который остаётся актуальным годами. Выбери свой и переступи черту обыденного.",
@@ -115,8 +115,8 @@ export default function Index() {
       <section id="join" className="relative">
         <SmoothScrollHero
           scrollHeight={2500}
-          desktopImage="https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/f0a9c5f1-e3f3-4c8d-a8ab-dd1d8774ec25.jpg"
-          mobileImage="https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/f0a9c5f1-e3f3-4c8d-a8ab-dd1d8774ec25.jpg"
+          desktopImage="https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/3f49b1b7-1609-42cb-8056-48fd0a5346cd.jpg"
+          mobileImage="https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/3f49b1b7-1609-42cb-8056-48fd0a5346cd.jpg"
           initialClipPercentage={30}
           finalClipPercentage={70}
         />
