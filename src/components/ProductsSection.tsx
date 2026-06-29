@@ -1,6 +1,11 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion"
 import { useState, useRef } from "react"
 
+const BG_BLUE = "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/2d1b4d5e-aac9-4ff3-ba89-dbdcbd36c0d7.jpg"
+const BG_RED = "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/8f34093f-aab3-4915-99a1-333786a6fc66.jpg"
+const BG_CONCRETE = "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/24df898a-3fbc-46bf-910e-c1c8f2e56f09.jpg"
+const BG_PURPLE = "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/717a12e3-5230-4902-9a82-4d8e96ba1857.jpg"
+
 const products = [
   {
     id: 1,
@@ -8,6 +13,7 @@ const products = [
     description: "Оверсайз • Хлопок 100%",
     price: "2 990 ₽",
     image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/17f2afc8-a19d-4287-bc16-427c10c93f85.jpg",
+    bg: BG_BLUE,
     tag: "Новинка",
     sizes: ["S", "M", "L", "XL", "XXL"],
     accent: "#3b82f6",
@@ -18,6 +24,7 @@ const products = [
     description: "Slim fit • Хлопок 100%",
     price: "2 490 ₽",
     image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/1d7d0466-504c-4882-9ac4-91bf7a365520.jpg",
+    bg: BG_RED,
     tag: "Хит",
     sizes: ["S", "M", "L", "XL"],
     accent: "#ef4444",
@@ -28,6 +35,7 @@ const products = [
     description: "Оверсайз • Хлопок 100%",
     price: "2 990 ₽",
     image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/8072e932-b0e9-4153-8638-c81ed19d7155.jpg",
+    bg: BG_CONCRETE,
     tag: null,
     sizes: ["M", "L", "XL", "XXL"],
     accent: "#f59e0b",
@@ -38,6 +46,7 @@ const products = [
     description: "Оверсайз • Хлопок 100%",
     price: "2 990 ₽",
     image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/9072f2fb-d631-4204-aaca-0c679a93c2db.jpg",
+    bg: BG_RED,
     tag: "Лимитед",
     sizes: ["S", "M", "L", "XL", "XXL"],
     accent: "#8b5cf6",
@@ -48,6 +57,7 @@ const products = [
     description: "Оверсайз • Хлопок 100%",
     price: "2 990 ₽",
     image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/e65e4c97-daf0-44a6-8535-c4de5b1ed08e.jpg",
+    bg: BG_CONCRETE,
     tag: "Новинка",
     sizes: ["S", "M", "L", "XL", "XXL"],
     accent: "#10b981",
@@ -58,6 +68,7 @@ const products = [
     description: "Оверсайз • Хлопок 100%",
     price: "2 990 ₽",
     image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/a2096ef6-8959-44dc-8064-59b462bf9deb.jpg",
+    bg: BG_RED,
     tag: null,
     sizes: ["M", "L", "XL", "XXL"],
     accent: "#dc2626",
@@ -68,6 +79,7 @@ const products = [
     description: "Оверсайз • Хлопок 100%",
     price: "2 990 ₽",
     image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/3f49b1b7-1609-42cb-8056-48fd0a5346cd.jpg",
+    bg: BG_BLUE,
     tag: "Хит",
     sizes: ["S", "M", "L", "XL", "XXL"],
     accent: "#f97316",
@@ -78,6 +90,7 @@ const products = [
     description: "Оверсайз • Хлопок 100%",
     price: "2 990 ₽",
     image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/f1f021db-775a-4823-865e-49f9b38c7b0c.jpg",
+    bg: BG_PURPLE,
     tag: null,
     sizes: ["S", "M", "L", "XL"],
     accent: "#6366f1",
@@ -132,30 +145,30 @@ function ProductCard({ product, index }: { product: typeof products[0]; index: n
         style={{ background: `radial-gradient(ellipse at center, ${product.accent}55, transparent 70%)` }}
       />
 
-      {/* Animated noise/grain bg */}
-      <div className="relative overflow-hidden bg-gray-950 border border-gray-800 group-hover:border-gray-600 transition-all duration-500">
-        {/* Animated gradient orbs */}
-        <motion.div
-          className="absolute -top-8 -right-8 w-32 h-32 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"
-          style={{ background: product.accent }}
-          animate={isHovered ? { scale: [1, 1.3, 1], x: [0, 10, 0] } : {}}
-          transition={{ duration: 2, repeat: Infinity }}
-        />
-        <motion.div
-          className="absolute -bottom-8 -left-8 w-24 h-24 rounded-full blur-3xl opacity-10 group-hover:opacity-30 transition-opacity duration-500"
-          style={{ background: product.accent }}
-          animate={isHovered ? { scale: [1, 1.4, 1], y: [0, -8, 0] } : {}}
-          transition={{ duration: 2.5, repeat: Infinity, delay: 0.3 }}
-        />
-
-        {/* Image */}
+      {/* Card */}
+      <div className="relative overflow-hidden border border-gray-800 group-hover:border-gray-500 transition-all duration-500">
+        {/* Image with background */}
         <div className="relative aspect-square overflow-hidden">
+          {/* Background image */}
+          <motion.div
+            className="absolute inset-0"
+            animate={isHovered ? { scale: 1.08 } : { scale: 1 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <img
+              src={product.bg}
+              alt=""
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/30" />
+          </motion.div>
+
+          {/* Product image on top */}
           <motion.img
             src={product.image}
             alt={product.name}
-            className="w-full h-full object-cover"
-            style={{ translateZ: "20px" }}
-            animate={isHovered ? { scale: 1.07 } : { scale: 1 }}
+            className="relative z-10 w-full h-full object-contain drop-shadow-2xl"
+            animate={isHovered ? { scale: 1.06, y: -6 } : { scale: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           />
 
@@ -177,7 +190,7 @@ function ProductCard({ product, index }: { product: typeof products[0]; index: n
         </div>
 
         {/* Info */}
-        <div className="p-5 flex flex-col gap-4">
+        <div className="p-5 flex flex-col gap-4 bg-gray-950">
           <div>
             <h3 className="text-sm font-black tracking-wide text-white mb-1">{product.name}</h3>
             <p className="text-xs text-gray-500 tracking-wide">{product.description}</p>
