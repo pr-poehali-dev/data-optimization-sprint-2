@@ -8,25 +8,25 @@ export default function HeroSection() {
 
   const slides = [
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-j46TPXDHzpn3M65wMva3qHPNhwokYn.png",
-      alt: "Группа бегунов в движении",
+      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/1b5eeab0-cda2-429b-b649-29ec1797b359.jpg",
+      alt: "Модель в премиальном стрит-вире RUBEZH",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-oH2K0gw1HEqvYhhbwJrYbmkBrbksyk.png",
-      alt: "Бегунья с эффектом размытия",
+      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/4c502fb6-2caa-4a25-8734-9f4492972bf0.jpg",
+      alt: "Уличный образ RUBEZH в движении",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DQ2brNc5Vszxllx17YNA6JqGqiHaRm.png",
-      alt: "Бегун во главе группы",
+      image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/files/f0a9c5f1-e3f3-4c8d-a8ab-dd1d8774ec25.jpg",
+      alt: "Коллекция RUBEZH на крыше города",
     },
   ]
 
   const navItems = [
     { name: "Главная", href: "#hero" },
-    { name: "Миссия", href: "#mission" },
-    { name: "Сообщество", href: "#community" },
+    { name: "Философия", href: "#mission" },
+    { name: "Коллекция", href: "#community" },
     { name: "Отзывы", href: "#testimonials" },
-    { name: "Вступить", href: "#join" },
+    { name: "Купить", href: "#join" },
   ]
 
   // Navigation handlers
@@ -57,7 +57,7 @@ export default function HeroSection() {
       {/* Navigation */}
       <nav className="relative z-20 flex items-center justify-between p-6 md:p-8">
         {/* Logo/Brand */}
-        <div className="text-white font-bold text-xl tracking-wider">STRIDE</div>
+        <div className="text-white font-bold text-xl tracking-[0.3em]">RUBEZH</div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
@@ -104,14 +104,12 @@ export default function HeroSection() {
       <div className="relative z-10 flex h-full items-center justify-center px-6">
         <div className="text-center text-white max-w-4xl">
           {/* Main Title */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-wider mb-4 leading-none">
-            STRIDE
-            <br />
-            COLLECTIVE
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-[0.15em] mb-4 leading-none">
+            RUBEZH
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl font-light tracking-wide mb-8 text-gray-200">Беговое сообщество</p>
+          <p className="text-xl md:text-2xl font-light tracking-[0.2em] mb-8 text-gray-200 uppercase">Премиальный стрит-вир</p>
 
           {/* CTA Button - Now using LiquidButton */}
           <LiquidButton
@@ -119,7 +117,7 @@ export default function HeroSection() {
             className="font-semibold text-lg tracking-wide"
             onClick={() => scrollToSection("#join")}
           >
-            Присоединиться
+            Смотреть коллекцию
           </LiquidButton>
         </div>
       </div>
