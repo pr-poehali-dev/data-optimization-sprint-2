@@ -38,6 +38,42 @@ const products = [
     tag: "Лимитед",
     sizes: ["S", "M", "L", "XL", "XXL"],
   },
+  {
+    id: 5,
+    name: "Футболка «Воин» v2",
+    description: "Оверсайз • Хлопок 100%",
+    price: "2 990 ₽",
+    image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/e65e4c97-daf0-44a6-8535-c4de5b1ed08e.jpg",
+    tag: "Новинка",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+  },
+  {
+    id: 6,
+    name: "Футболка «Спартак» фронт",
+    description: "Оверсайз • Хлопок 100%",
+    price: "2 990 ₽",
+    image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/a2096ef6-8959-44dc-8064-59b462bf9deb.jpg",
+    tag: null,
+    sizes: ["M", "L", "XL", "XXL"],
+  },
+  {
+    id: 7,
+    name: "Футболка «Мишка» бэк",
+    description: "Оверсайз • Хлопок 100%",
+    price: "2 990 ₽",
+    image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/3f49b1b7-1609-42cb-8056-48fd0a5346cd.jpg",
+    tag: "Хит",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+  },
+  {
+    id: 8,
+    name: "Футболка «Спартак» бэк",
+    description: "Оверсайз • Хлопок 100%",
+    price: "2 990 ₽",
+    image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/f1f021db-775a-4823-865e-49f9b38c7b0c.jpg",
+    tag: null,
+    sizes: ["S", "M", "L", "XL"],
+  },
 ]
 
 export default function ProductsSection() {
@@ -65,7 +101,7 @@ export default function ProductsSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6">
           {products.map((product, index) => (
             <motion.div
               key={product.id}
