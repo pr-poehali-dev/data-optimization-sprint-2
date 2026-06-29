@@ -23,7 +23,7 @@ const products = [
     name: "Футболка «Медведь»",
     description: "Slim fit • Хлопок 100%",
     price: "2 490 ₽",
-    image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/1d7d0466-504c-4882-9ac4-91bf7a365520.jpg",
+    image: "https://cdn.poehali.dev/projects/de103d2b-da80-4de7-a194-3cf729ba186e/bucket/54913314-250e-4b8e-8e8c-8067014be150.jpg",
     bg: BG_RED,
     tag: "Хит",
     sizes: ["S", "M", "L", "XL"],
